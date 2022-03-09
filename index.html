@@ -10,6 +10,13 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Clarusway School Project</title>
   </head>
@@ -243,7 +250,8 @@
         <div class="container py-5">
           <div class="row">
             <div class="col">
-              <a href="">
+              <!-- link trigger modal-->
+              <a href="" data-bs-toggle="modal" data-bs-target="#modalYT">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="5rem"
@@ -259,12 +267,82 @@
                   />
                 </svg>
               </a>
+
+              <!--Modal: modalYT-->
+              <div
+                class="modal fade"
+                id="modalYT"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="myModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg" role="document">
+                  <!--Content-->
+                  <div class="modal-content">
+                    <div class="modal-header text-secondary">
+                      <h4 class="modal-title">Clarusway</h4>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <!--Body-->
+                    <div class="modal-body mb-0 p-0">
+                      <div
+                        class="embed-responsive embed-responsive-16by9 z-depth-1-half"
+                      >
+                        <iframe
+                          class="embed-responsive-item"
+                          src="https://www.youtube.com/embed/DHkzfn-Ra7k"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                    </div>
+
+                    <!--Footer-->
+                    <div
+                      class="modal-footer justify-content-center flex-column flex-md-row"
+                    >
+                      <span class="mr-4 text-secondary">Spread the word!</span>
+                      <div>
+                        <a type="button" class="btn-floating btn-sm btn-fb">
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <!--Twitter-->
+                        <a type="button" class="btn-floating btn-sm btn-tw">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                        <!--Google +-->
+                        <a type="button" class="btn-floating btn-sm btn-gplus">
+                          <i class="fab fa-google-plus-g"></i>
+                        </a>
+                        <!--Linkedin-->
+                        <a type="button" class="btn-floating btn-sm btn-ins">
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </div>
+                      <!-- <button
+                        type="button"
+                        class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div> -->
+                  </div>
+                  <!--/.Content-->
+                </div>
+              </div>
+              <!--Modal: modalYT-->
               <h4 class="text-secondary py-3">Watch Us</h4>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
